@@ -1,0 +1,49 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                          http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <!-- this settings file is injected into the docker build image in order to be able to deploy to nexus -->
+
+    <!-- <localRepository>/usr/share/maven/ref/repository</localRepository> -->
+    <interactiveMode/>
+    <usePluginRegistry/>
+    <offline/>
+    <pluginGroups/>
+    <proxies/>
+    <mirrors/>
+    <profiles>
+        <profile>
+            <id>repos</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>https://repo1.maven.org/maven2</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>jitpack.io</id>
+                    <url>https://jitpack.io</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+
+<!--    <servers>-->
+<!--        <server>-->
+<!--            <id>nexus</id>-->
+<!--            <username>${env.NEXUS_USER}</username>-->
+<!--            <password>${env.NEXUS_PASS}</password>-->
+<!--        </server>-->
+<!--    </servers>-->
+
+    <activeProfiles>
+        <activeProfile>repos</activeProfile>
+    </activeProfiles>
+    
+</settings>
