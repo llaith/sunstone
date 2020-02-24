@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.llaith.sunstone</groupId>
+        <artifactId>sunstone-project-superpom</artifactId>
+        <version>${revision}</version>
+        <relativePath>../sunstone-project/sunstone-project-superpom</relativePath>
+    </parent>
+
+    <artifactId>sunstone-core</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>sunstone-core-spi</module>
+        <module>sunstone-core-service</module>
+    </modules>
+
+</project>
