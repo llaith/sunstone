@@ -15,7 +15,7 @@
 
     <properties>
 
-        <jackson.version>2.10.1</jackson.version>
+        <jackson.version>2.12.6.1</jackson.version>
         <jdbi.version>3.12.2</jdbi.version>
         <easyrules.version>3.4.0</easyrules.version>
         <h2.version>1.4.200</h2.version>
